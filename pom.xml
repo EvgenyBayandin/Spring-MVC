@@ -49,6 +49,14 @@
       <version>${spring.version}</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.thymeleaf/thymeleaf-spring5 -->
+    <dependency>
+      <groupId>org.thymeleaf</groupId>
+      <artifactId>thymeleaf-spring5</artifactId>
+      <version>3.1.2.RELEASE</version>
+    </dependency>
+
+
   </dependencies>
   <build>
     <finalName>SpringMVCApp1</finalName>
