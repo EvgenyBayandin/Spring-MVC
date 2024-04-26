@@ -8,7 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.SpringTemplateEngine;
-import org.springframework.web.servlet.view.ViewResolverRegistry;
+import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @Configuration
