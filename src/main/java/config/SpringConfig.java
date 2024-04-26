@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @Configuration
-@ComponentScan("com")
+@ComponentScan("controllers")
 @EnableWebMvc
 public class SpringConfig implements WebMvcConfigurer {
     private final ApplicationContext applicationContext;
