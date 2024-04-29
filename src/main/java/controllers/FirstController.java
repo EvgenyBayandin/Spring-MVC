@@ -25,4 +25,29 @@ public class FirstController {
     public  String goodByePage(){
         return "first/goodbye";
     }
+
+    @GetMapping("/calculator")
+    public String calcPage(@RequestParam(value = "a", required = false) int a, @RequestParam(value = "b", required = false) int b, @RequestParam(value = "action", required = false) String action, Model model){
+        double res;
+        switch (action) {
+            case "add":
+                res = a + b;
+                break;
+            case "sub":
+                res = a - b;
+                break;
+            case "mul":
+                res = a * b;
+                break;
+            case "div":
+                res = a / (double) b;
+                break;
+            default:
+                res = 0;
+        }
+
+        model.addAttribute("result", res);
+
+        return "first/calculator";
+    }
 }

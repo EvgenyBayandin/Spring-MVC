@@ -1,0 +1,21 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+</head>
+<body>
+<h3>Calculator</h3>
+<a href="/first/hello">Go hello page</a> or <br><br><a href="/exit">Exit</a><br><br>
+or <a href="/first/calculator?a=10&b=3&action=div">Request with calculator params a=10, b=3, action=div</a><br><br>
+or <a href="/first/calculator?a=10&b=15&action=add">Request with calculator params a=10, b=15, action=add</a><br><br>
+or <a href="/first/calculator?a=10&b=5&action=sub">Request with calculator params a=10, b=5, action=sub</a><br><br>
+or <a href="/first/calculator?a=10&b=5&action=mul">Request with calculator params a=10, b=5, action=mul</a><br><br>
+
+The result is: <p th:text="${result}"></p>
+
+</body>
+</html>
